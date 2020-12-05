@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 
 app.route('/api')
   .get(async (req, res) => {
-   
+
     //res.send(`Lab 5 for ${process.env.NAME}`);
   })
   .post(async (req, res) => {
@@ -30,7 +30,8 @@ app.route('/api')
     console.log('POST request detected');
 
 
-    /* Get our API Using nested fetch
+/* 
+    Get our API Using nested fetch
     await fetch("https://api.planetterp.com/v1/courses").then(function (response) {
 		    // Get a JSON object from the response
         return response.json();
@@ -69,13 +70,15 @@ app.route('/api')
 		    // if there's an error, log it
 		    console.log(error);
 	  });
-    */
+*/
 
 
 
-    /* Better way using promise.all 
+/* 
+    Better way using promise.all 
     The Promise.all() method (and promises in general) work in all modern browsers, 
-    but have no IE support.*/
+    but have no IE support.
+*/
 
     //------- returns 2 big arrays, first has course data, second has prof data ---------//
 
@@ -98,24 +101,22 @@ app.route('/api')
       console.log(error);
     });
 
-    /*console.log('POST request detected');
+/*
+    console.log('POST request detected');
     const professorData = await fetch("GET https://api.planetterp.com/v1/professors");
     const professor = await professorData.json();
     console.log('Form data', professor);
-    res.json(professor);*/
+    res.json(professor);
 
-  
-    /*console.log('POST request detected');
+    console.log('POST request detected');
     const gradeData = await fetch("GET https://api.planetterp.com/v1/grades");
     const grade = await data.json();
     console.log('Form data', grade);
-    res.json(grade);*/
+    res.json(grade);
+*/
 
-    
-    //res.send('<b>Hello World</b>');
-    
-    //console.log('Form data in res.body', req.body);
   });
+
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}!`);

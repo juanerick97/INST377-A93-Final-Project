@@ -1,3 +1,49 @@
  body{
-     background-color: azure;
+     background-color: rgb(255, 252, 104);
  }
+
+ h1 {
+    color: #2a2a2a;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 80;
+  }
+ 
+
+  .header > img {
+    width: 20%;
+    height: 30%;
+    left: 5px;
+    right: 10px;
+    position:absolute; 
+	  top:-40px; 
+	  left:0; 
+}
+
+ #textInput {
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+    justify-content: space-between;
+    width: 600px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+  
+  .search-bar > button{
+    align-items: center;
+    left: 955px;
+    top:165px; 
+    position:absolute; 
+    border-radius: 50%;
+    background-color: white;
+
+  }
+
+  button:hover {
+    background-color: #eb2f00;
+    color: white;
+  }
