@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
 
+    <html lang="en" class="newpage">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,14 +14,16 @@
     <div class="wrapper">
         <div class="container, flex-outer">
             <div class="header">
-                <h1>University of Maryland class and Professor Database</h1>
-                <!--<img src="https://cdn.freebiesupply.com/logos/thumbs/2x/university-of-maryland-logo.png" class="link" alt="UMD Logo">-->
+                <h1>University of Maryland Class and Professor Database</h1>
+                <img src="https://cdn.freebiesupply.com/logos/thumbs/2x/university-of-maryland-logo.png" class="link" alt="UMD Logo">
             </div>
 
             <div class="search-bar">
-                <nav>
-                    <a href="professors.html"> Search by Professor</a>
-                </nav>
+                <input class=courseRadio type="radio" name="searchfilter" id="course_search" value="course_search" checked/>
+                <label class= courseRadioLabel for="course_search">Search By Course</label>
+                <input class=profRadio type="radio" name="searchfilter" id="professor_search" value="professor_search"/>
+                <label class=profRadioLabel for="professor_search">Search By Professor</label>
+
                 <input type="text" id="textInput" placeholder="Enter Course"></input>
                 <button id="search_button" class="search_button" name="search_button" type="submit">
                     Search
@@ -32,7 +35,9 @@
         </div>
     </div>
 
-    <script src="scripts.js"></script>
+    <script type="text/javascript" src="scripts.js" async></script>
+    <script type="text/javascript" async src="makePage.js"></script>
+    
 </body>
 
 </html>
